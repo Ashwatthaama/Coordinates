@@ -21,5 +21,8 @@ class ViewController: UIViewController, Storyboarded {
         coordinator?.buySubscription()
     }
 
+    @IBAction func friendZoneTapped(_ sender: Any) {
+        coordinator?.friendZone()
+    }
 }
 

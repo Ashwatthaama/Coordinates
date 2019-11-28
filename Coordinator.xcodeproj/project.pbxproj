@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841FA3E8239077EB00AC2FE5 /* Int-TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841FA3E7239077EB00AC2FE5 /* Int-TimeFormatter.swift */; };
+		84201E96238FD1A30052EDAA /* FriendZonedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201E95238FD1A30052EDAA /* FriendZonedViewController.swift */; };
+		84201E98238FD20D0052EDAA /* FriendZonedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201E97238FD20D0052EDAA /* FriendZonedCoordinator.swift */; };
+		84201E9A238FD4B90052EDAA /* FriendZoneDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201E99238FD4B90052EDAA /* FriendZoneDataSource.swift */; };
+		84201E9C238FE19A0052EDAA /* FriendsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201E9B238FE19A0052EDAA /* FriendsDetailsViewController.swift */; };
+		84201E9E238FE1CC0052EDAA /* FriendsDetailedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201E9D238FE1CC0052EDAA /* FriendsDetailedCoordinator.swift */; };
+		84201EA023900F590052EDAA /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84201E9F23900F590052EDAA /* FriendTableViewCell.swift */; };
 		842276FB238DCC4B000D2CC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842276FA238DCC4B000D2CC1 /* AppDelegate.swift */; };
 		842276FD238DCC4B000D2CC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842276FC238DCC4B000D2CC1 /* ViewController.swift */; };
 		84227700238DCC4B000D2CC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842276FE238DCC4B000D2CC1 /* Main.storyboard */; };
@@ -25,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841FA3E7239077EB00AC2FE5 /* Int-TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int-TimeFormatter.swift"; sourceTree = "<group>"; };
+		84201E95238FD1A30052EDAA /* FriendZonedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendZonedViewController.swift; sourceTree = "<group>"; };
+		84201E97238FD20D0052EDAA /* FriendZonedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendZonedCoordinator.swift; sourceTree = "<group>"; };
+		84201E99238FD4B90052EDAA /* FriendZoneDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendZoneDataSource.swift; sourceTree = "<group>"; };
+		84201E9B238FE19A0052EDAA /* FriendsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailsViewController.swift; sourceTree = "<group>"; };
+		84201E9D238FE1CC0052EDAA /* FriendsDetailedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDetailedCoordinator.swift; sourceTree = "<group>"; };
+		84201E9F23900F590052EDAA /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		842276F7238DCC4B000D2CC1 /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842276FA238DCC4B000D2CC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842276FC238DCC4B000D2CC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,10 +100,12 @@
 		84F40FEB238E9E2C00DE014C /* CoordinatorProtocols */ = {
 			isa = PBXGroup;
 			children = (
+				84201E9D238FE1CC0052EDAA /* FriendsDetailedCoordinator.swift */,
 				8422770C238DCC5D000D2CC1 /* Coordinator.swift */,
 				8422770E238DCCC8000D2CC1 /* Storyboarded.swift */,
 				84227710238DCE27000D2CC1 /* MainCoordinator.swift */,
 				84227714238DD8A1000D2CC1 /* PeriodicCoordinator.swift */,
+				84201E97238FD20D0052EDAA /* FriendZonedCoordinator.swift */,
 				84F40FF6238EDA0400DE014C /* DetailedCoordinator.swift */,
 			);
 			path = CoordinatorProtocols;
@@ -98,6 +114,8 @@
 		84F40FEC238E9E8F00DE014C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				841FA3E7239077EB00AC2FE5 /* Int-TimeFormatter.swift */,
+				84201E99238FD4B90052EDAA /* FriendZoneDataSource.swift */,
 				84F40FF2238ED3BA00DE014C /* TableDataSource.swift */,
 				84F40FED238E9EA500DE014C /* AtomicElements.swift */,
 			);
@@ -112,6 +130,7 @@
 				842276FE238DCC4B000D2CC1 /* Main.storyboard */,
 				84227701238DCC4D000D2CC1 /* Assets.xcassets */,
 				84227703238DCC4D000D2CC1 /* LaunchScreen.storyboard */,
+				84201E9F23900F590052EDAA /* FriendTableViewCell.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -119,9 +138,11 @@
 		84F40FF8238EDFE400DE014C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84201E9B238FE19A0052EDAA /* FriendsDetailsViewController.swift */,
 				84227712238DD1BE000D2CC1 /* PeriodicElementsViewController.swift */,
 				84F40FF4238ED97100DE014C /* DetailedViewController.swift */,
 				842276FC238DCC4B000D2CC1 /* ViewController.swift */,
+				84201E95238FD1A30052EDAA /* FriendZonedViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,14 +219,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84201E9A238FD4B90052EDAA /* FriendZoneDataSource.swift in Sources */,
+				841FA3E8239077EB00AC2FE5 /* Int-TimeFormatter.swift in Sources */,
 				842276FD238DCC4B000D2CC1 /* ViewController.swift in Sources */,
+				84201E98238FD20D0052EDAA /* FriendZonedCoordinator.swift in Sources */,
 				84F40FEE238E9EA500DE014C /* AtomicElements.swift in Sources */,
 				84F40FF5238ED97100DE014C /* DetailedViewController.swift in Sources */,
 				842276FB238DCC4B000D2CC1 /* AppDelegate.swift in Sources */,
 				8422770D238DCC5D000D2CC1 /* Coordinator.swift in Sources */,
+				84201E96238FD1A30052EDAA /* FriendZonedViewController.swift in Sources */,
 				84227711238DCE27000D2CC1 /* MainCoordinator.swift in Sources */,
 				84227715238DD8A1000D2CC1 /* PeriodicCoordinator.swift in Sources */,
+				84201E9C238FE19A0052EDAA /* FriendsDetailsViewController.swift in Sources */,
 				84F40FF7238EDA0400DE014C /* DetailedCoordinator.swift in Sources */,
+				84201EA023900F590052EDAA /* FriendTableViewCell.swift in Sources */,
+				84201E9E238FE1CC0052EDAA /* FriendsDetailedCoordinator.swift in Sources */,
 				8422770F238DCCC8000D2CC1 /* Storyboarded.swift in Sources */,
 				84F40FF3238ED3BA00DE014C /* TableDataSource.swift in Sources */,
 				84227713238DD1BE000D2CC1 /* PeriodicElementsViewController.swift in Sources */,

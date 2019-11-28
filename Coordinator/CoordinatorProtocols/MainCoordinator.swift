@@ -36,6 +36,12 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         child.start()
     }
 
+    func friendZone() {
+        let child = FriendZonedCoordinator(navigationController: navigationController)
+        child.parentCoordinator = self
+        childCoordinator.append(child)
+        child.start()
+    }
     //------------------------------------------------------------------------------
     // MARK: - Navigation Handler
     //------------------------------------------------------------------------------
