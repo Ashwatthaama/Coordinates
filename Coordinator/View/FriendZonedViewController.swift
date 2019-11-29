@@ -42,14 +42,9 @@ class FriendZonedViewController: UITableViewController, Storyboarded {
     func update(friend: Friend) {
 
         guard selectedFriend >= 0 else { return }
-
         tableView.reloadData()
         dataSource.friends[selectedFriend] = friend
         dataSource.saveData()
-
-//        dataSource.friends[selectedFriend!] = friend
-//        dataSource.saveData()
-//        tableView.reloadData()
     }
 
 

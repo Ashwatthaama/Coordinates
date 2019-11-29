@@ -35,8 +35,11 @@ class FriendZonedCoordinator: Coordinator {
     }
 
     func update(friend: Friend) {
-        let vc = FriendZonedViewController()
-
-        vc.update(friend: friend)
-    }
+            for vc in navigationController.viewControllers {
+                if vc.isKind(of: FriendZonedViewController.classForCoder()) {
+                    let viewC = vc as? FriendZonedViewController
+                    viewC?.update(friend: friend)
+                }
+            }
+        }
 }
